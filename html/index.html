@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samaweekend</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--logo, Acceuil, propiétes, activités, contacts, connexion, inscription (boutton), devenir hôte (boutton)  -->
+    <div class="barre_nav_web">
+        
+
+        <div id="swlogo">
+            
+          
+            <p id="sama">--- Sama</p>
+            <p id="week">Weekend ---</p>
+        
+          
+        </div>
+        <nav>
+            <ul id="nav">
+                <li>
+                    Acceuil
+                </li>
+                <li>
+                  
+                    Propriétés
+                </li>
+                <li>
+                    Activités
+                </li>
+                <li>
+                    Contacts
+                </li>
+                <li>Connexion</li>
+                <li>
+                    <button type="button" class="nav" id="inscription">
+                        Inscription
+                    </button>
+                </li>
+                <li>
+                    <button type="button" id="hote" class="nav">
+                        Devenir hôte
+                    </button>
+                </li>
+                
+
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="barre_nav_mobile">
+        <div id="swlogo">
+             <p id="sama">--- Sama</p>
+            <p id="week">Weekend ---</p>
+        
+          
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+
+    </div>
+    
+    <!-- header -->
+    <header>
+
+        <div id="header_web" class="header_overlay">
+            <h1>Plus qu'une détestination, une expérience à couper le souffle.</h1>
+            <h4>Vivez une expérience unique. Découvrez des lieux inoubliables au pays de la Teranga.</h4>
+            <ul id="barre_button">
+                
+                <li>
+                    <button type="button" class="header" id="quel_ville">Quelle ville ?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                </li>
+                
+                <li >
+                    <button id="arrive" type="button" class="header" >Arrivée
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                    </button>
+                   
+                </li>
+                <li  >
+                    <button id="depart" type="button" class="header" >Départ
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                    </button>
+                    
+                </li>
+               <li>
+                <div>
+                    <input type="number" min="0" placeholder="Voyageurs">
+                </div>
+               </li>
+                
+                <li>
+                    <button type="button" class="header" id="recherche">Recherche</button>
+                </li>
+               
+            </ul>
+            <ul >
+                <li>
+                    <button type="button" id="mobile">
+                        Où souhaitez-vous allez ?
+                       </button>
+                </li>
+            </ul>
+           
+        </div>
+        
+       <div class="overlay">
+    </header>
+
+    <div id="coup_de_coeur">
+     <h2>Nos coup de coeur du mois</h2>
+     <h4>Rendez-vous dans des lieux magiques choisis avec soin par nos experts</h4>
+    </div>
+
+    <div class="bloc_ville">
+        <ul class="ville">
+        <li>Dakar</li>
+        <li>Saly</li>
+        <li>Mbour</li>
+        <li>Cap Skirring</li>
+        <li>Saint Louis</li>
+        <li>Îles Du Saloum</li>
+        <li>Gorée</li>
+        <li>Somone</li>
+        <li>Ngaparou</li>
+     </ul>
+   
+   
+       
+    
+       
+   
+      
+
+
+       <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/><path d="m9 16 .348-.24c1.465-1.013 3.84-1.013 5.304 0L15 16"/><path d="M8 7h.01"/><path d="M16 7h.01"/><path d="M12 7h.01"/><path d="M12 11h.01"/><path d="M16 11h.01"/><path d="M8 11h.01"/><path d="M10 22v-6.5m4 0V22"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-drum"><path d="m2 2 8 8"/><path d="m22 2-8 8"/><ellipse cx="12" cy="9" rx="10" ry="5"/><path d="M7 13.4v7.9"/><path d="M12 14v8"/><path d="M17 13.4v7.9"/><path d="M2 9v8a10 5 0 0 0 20 0V9"/></svg>
+       </div>
+ </div>
+   
+   
+
+ 
+ 
+</div>
+<div id="destination_pref">
+    <div id="text_destination">
+        <h2>Nos destinations préférées</h2>
+     <h4>Explorez les plus beaux endroits du Sénégal</h4>
+        
+    </div>
+    
+
+    <div class="grid-container" >
+        <div class="grid-item1" >
+            
+            <div class="overlay-degradee">
+                <h2>Cap Skirring</h2>
+            </div>
+           
+        </div>
+        <div class="grid-item2" >
+            
+            <div class="overlay-degradee">
+                <h2>Dakar</h2>
+            </div>
+        </div>
+        <div class="grid-item3" >
+            
+            <div class="overlay-degradee">
+                <h2>
+                    Gorée
+                </h2>
+            </div>
+        </div>
+        <div class="grid-item4" >
+            <div class="overlay-degradee">
+               <h2>
+                Iles du Saloum
+               </h2>
+            </div>
+        </div>
+        <div class="grid-item5" >
+            <div class="overlay-degradee">
+               <h2>
+                Saint Louis
+               </h2>
+            </div>
+        </div>
+        <div class="grid-item6" >
+            
+            <div class="overlay-degradee">
+                <h2>
+                    Saly
+                </h2>
+            </div>
+        </div>
+    </div>
+   
+ 
+    <div id="decouvre">
+        <div id="text_decouvre">
+            <h1>Ce mois-ci, découvrez Saly</h1>
+            <h3>avec Samaweekend</h3>
+            <p>Idéalement située sur la petite côte, Saly Portudal est l'une des destinations touristiques les plus prisées du Sénégal. Vous tomberez sans aucun doute sous le charme de cette station balnéaire, à seulement 90 km de Dakar. Un endroit idéal pour un week-end de détente ou quelques jours de vacances en famille ou entre amis.
+
+            </p>
+    
+            <button type="button">Lire</button>
+        </div>
+    </div>
+ <div id="activitee">
+        <div id="text_activitee">
+            <h2>Activité et Sorties</h2>
+         
+            
+        </div>
+        
+    
+        <div class="grid-container" >
+            <div class="grid-item2_1" >
+                
+                <div class="overlay-degradee">
+                    <h2>Activités Nautiques</h2>
+                </div>
+               
+            </div>
+            <div class="grid-item2_2" >
+                
+                <div class="overlay-degradee">
+                    <h2>Auto, Moto & Quads</h2>
+                </div>
+            </div>
+            <div class="grid-item2_3" >
+                
+                <div class="overlay-degradee">
+                    <h2>
+                        Salle de seminaires & fêtes
+                    </h2>
+                </div>
+            </div>
+            <div class="grid-item2_4" >
+                <div class="overlay-degradee">
+                   <h2>
+                    Excursions & Randos
+                   </h2>
+                </div>
+            </div>
+            <div class="grid-item2_5" >
+                <div class="overlay-degradee">
+                   <h2>
+                    Restos & Night-clubs 
+                   </h2>
+                </div>
+            </div>
+            <div class="grid-item2_6" >
+                
+                <div class="overlay-degradee">
+                    <h2>
+                        Spa, Massage, Beaute
+                    </h2>
+                </div>
+            </div>
+     </div>
+ </div>
+
+ <div id="devenir_hote">
+     <button type="button">Devenir hôte</button>
+ </div>
+   
+ <footer>
+    <div class="footer_container">
+        <div class="foot_col1">
+            <img src="../image/logos/logo.png" alt="logo">
+            <p>SamaWeekend est le spécialiste des vacances et des séjours réussis, promesse de souvenirs inoubliables au pays de la Teranga.</p>
+
+            <div>
+                &copy;
+                2024 Samaweekend, Tous droits résérvés
+            </div>
+
+        </div>
+        <div class="foot_col2">
+            <h3>Découvrir</h3>
+
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Appartement
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Auberge/Lodge
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Maison d'hôtes
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Hôtel
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Autos, Moto & Quads
+                </li>
+            </ul>
+        </div>
+        <div class="foot_col3">
+            <h3>Sociéte</h3>
+
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    A propos
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Blog et presse
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Annonces
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Termes et conditions
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Conditions génerales de vente
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    Politique de confidentialités
+                </li>
+            </ul>
+        </div>
+
+        <div class="foot_col4">
+            <h3>Contacts</h3>
+
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Villa 110 P-A Unité 15 - Dakar - Sénégal
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                   +221 76 197 84 79
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    email : infos@samaweekend.com
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+                    Contactez-nous
+                </li>
+
+                <ul>
+                    <li><button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </button></li>
+                    
+                    <li><button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </button></li>
+                    <li><button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </button></li>
+                    <li><button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                    </button></li>
+                </ul>
+
+            </ul>
+        </div>
+
+
+    </div>
+ </footer>
+ 
+  
+    
+  
+</body>

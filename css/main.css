@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* barre de navigation web */
+
+div.barre_nav_web {
+    background-color: rgba(255, 255, 255, 0.842);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+   padding: 0.8em;
+    position: sticky;
+    top: 0%;
+    border-bottom: lightgray solid 1px;
+    
+}
+
+ul#nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 1.5em;
+}
+
+div#swlogo{
+    display: flex;
+    font-family: "quicksand", sans-serif;
+    justify-content: space-between;
+    font-weight:bolder;
+    font-size: larger;
+    
+
+}
+
+div#swlogo>p{
+    margin: 4px;
+    font-weight: bolder;
+    
+}
+
+p#sama{
+    color:rgb(255, 103, 48);
+}
+
+p#week{
+    color: rgb(0, 80, 0);
+}
+
+img#nav {
+    width: 10rem;
+}
+
+ul#nav>li {
+    
+    font-family: "quicksand", sans-serif;
+    font-size: 1em;
+    font-weight:600;
+    
+}
+
+button.nav {
+    padding: 14px;
+    height: 2.6em;
+    font-family: "quicksand", sans-serif;
+    border-radius: 0.3em;
+    border-style: solid;
+    font-size: 0.9em;
+    border-width: 0.01em;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    z-index: 50;
+    
+   
+}
+
+button.nav#inscription {
+    background-color: rgb(255, 103, 48);
+    border-color: rgb(255, 103, 48);
+    color: white;
+}
+button.nav#hote {
+    background-color: white;
+    border-color: rgb(255, 103, 48);
+    color:rgb(255, 103, 48);
+    
+    
+}
+
+
+
+
+/* fin barre de navigation web */
+
+/* header web */
+header {
+    background-image: url(../image/places/goree-header.jpeg);
+    background-size: 90em;
+    position: relative;
+    z-index: -10;
+  
+
+}
+
+
+div#header_web{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    font-family: "quicksand", sans-serif;
+    color: white;
+    margin-bottom: 19%;
+    z-index: 5;
+    text-align: center;
+    
+}
+
+div#header_web>ul{
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+    list-style: none;
+    gap: 1em;
+
+}
+
+div.overlay{    
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.25); 
+  z-index: -10; 
+}
+
+
+
+button.header{
+    padding: 14px;
+    width: 10em;
+    height: 2.8em;
+    font-family: "quicksand", sans-serif;
+    border-radius: 0.3em;
+    border-style: solid;
+    font-size: 0.9em;
+    border-color:lightgray;
+    border-width: 0.01em;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: white;
+    color: gray;
+    font-weight: 300;
+    
+}
+input{
+    padding: 14px;
+    width: 10em;
+    height: 2.8em;
+    font-family: "quicksand", sans-serif;
+    border-radius: 0.3em;
+    border-style: solid;
+    font-size: 0.9em;
+    border-color:lightgray;
+    border-width: 0.01em;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: white;
+    color: gray;
+    font-weight: 300;
+}
+button#recherche{
+    background-color: rgb(255, 103, 48);
+    border-color: rgb(255, 103, 48);
+    color: white;
+    font-weight: 600;
+    width: 6rem;
+}
+
+button#arrive{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+
+button#arrive>svg {
+    width: 1em;
+    color: lightgrey;
+}
+
+button#depart {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+button#depart>svg{
+    width: 1em;
+    color: lightgray;
+}
+
+button#depart:hover{
+    background-color: rgb(237, 237, 237);
+    color: black;
+    z-index: 1;
+   
+}
+
+
+
+button#arrive:hover{
+    background-color: rgb(237, 237, 237);
+    color: black;
+    z-index: 1;
+}
+
+button#quel_ville{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: black;
+    font-weight: 400;
+    
+}
+button#quel_ville>svg{
+    width: 1em;
+    color: gray;
+}
+
+/* fin header */
+
+
+/* coup de coeur */
+div#coup_de_coeur {
+    padding-top: 3em;
+    font-family: "quicksand", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+}
+
+ul.ville{
+    display: flex;
+    list-style: none;
+    font-family: "quicksand", sans-serif;
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid gray ;
+    border-right: 2px solid gray;
+    width: 90%;
+    margin-left: 0.5em;
+    overflow-x: scroll;
+
+}
+
+div.bloc_ville{
+    display: flex;
+
+}
+
+div.bloc_ville>div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: gray;
+    
+}
+
+div.bloc_ville>div>svg {
+    gap: 1em;
+    margin-left: 1em;
+}
+
+
+/* Nos destinations préférées  */
+
+div#destination_pref{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    margin-left: 0.5em;
+}
+div#text_destination{
+    font-family: "quicksand", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+
+
+div.grid-container{
+    display: grid;
+    margin-top: 1em;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    row-gap: 0.5em;
+   column-gap: 1em;
+   
+}
+
+.grid-item1{
+  background-image: url(../image/places/cap-skiring.jpeg);
+  background-size: 25em;
+    height: 15em;
+   color: white;
+   border-radius: 1em;
+  
+   
+}
+
+.grid-item2{
+    background-image: url(../image/places/dakar.jpeg);
+    background-size: 25em;
+   width: 25em;
+   height: 15em;
+   color: white;
+   border-radius: 1em;
+   
+}
+.grid-item3{
+    background-image: url(../image/places/goree.jpeg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+ 
+.grid-item4{
+    background-image: url(../image/places/saint-louis.jpeg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+
+}
+.grid-item5 {
+    background-image: url(../image/places/saloum.jpeg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item6{
+    background-image: url(../image/places/saly.jpeg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.overlay-degradee{
+    
+ width: 100%; 
+  height: 100%; 
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.432),rgba(52, 52, 52, 0.7));
+  border-radius: 1em;
+ 
+}
+.overlay-degradee>h2 {
+    font-family: "quicksand", sans-serif ;
+    text-align: center;
+    padding-top: 8.5em;
+}
+
+/* decouvre à Saly */
+
+#decouvre {
+    background-image: url(../image/bannieres/bg-cover.jpg);
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 31em;
+    background-size: 78em;
+    background-position-x: center;
+    background-position-y: center;
+  
+
+}
+
+#text_decouvre{
+    font-family: "quicksand", sans-serif ;
+    width: 60%;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.861);
+    
+}
+
+#text_decouvre>h3 {
+    font-weight: 400;
+    margin-top: 2em;
+    font-size: medium;
+    font-style: italic;
+}
+
+#text_decouvre>p {
+   padding-top: 0.2em;
+    font-weight: 600;
+    font-size:130%;
+   
+   
+}
+
+#text_decouvre>button{
+    margin-top: 1em;
+    background-color: rgba(255, 103, 48, 0.92);
+    border-color: rgb(255, 103, 48);
+    color: rgba(255, 255, 255, 0.858);
+    padding: 14px;
+    height: 2.6em;
+    font-family: "quicksand", sans-serif;
+    border-radius: 0.3em;
+    border-style: solid;
+    font-size: 0.9em;
+    border-width: 0.01em;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+
+
+/* Activite et sortie */
+div#text_activitee{
+    padding-top: 2em;
+    font-family: "quicksand", sans-serif;
+    font-size: larger;
+}
+
+.grid-item2_1{
+    background-image: url(../image/activities/activites-nautiques.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item2_2{
+    background-image: url(../image/activities/auto-moto-quads.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item2_3{
+    background-image: url(../image/activities/salle-de-seminaires-fetes.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item2_4{
+    background-image: url(../image/activities/excursions-randos.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item2_5{
+    background-image: url(../image/activities/restos-night-clubs.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.grid-item2_6{
+    background-image: url(../image/activities/spa-massage-beaute.jpg);
+    background-size: 25em;
+    width: 25em;
+    height: 15em;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+/* Deneir hote */
+
+#devenir_hote{
+    background-image: url(../image/bannieres/devenir-hote.jpg);
+    margin-top: 3.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 31em;
+    background-size: 78em;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#devenir_hote>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    background-color: rgb(255, 103, 48);
+    border-color: rgb(255, 103, 48);
+    color: rgb(255, 255, 255);
+    padding: 14px;
+    height: 2em;
+    font-family: "quicksand", sans-serif;
+    border-radius: 0.3em;
+    border-style: solid;
+    font-size: 2em;
+    border-width: 0.01em;   
+    font-weight: 600;
+
+}
+
+/* foot */
+
+.footer_container{
+    display: grid;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: "quicksand", sans-serif;
+}
+
+.foot_col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.foot_col1>img{
+    width: 20em;
+   
+}
+.foot_col1>p{
+    padding-left: 1.5em;
+    margin-top: -4em;
+    font-weight: 400;
+    
+  
+   
+}
+.foot_col1>div{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    padding-top: 2em;
+   padding-bottom: 2em;
+   font-size: small;
+   color: rgb(255, 103, 48) ;
+}
+
+.foot_col2>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    list-style: none;
+    color: gray;
+    
+}
+
+.foot_col2>li{
+    display: flex;
+   justify-content: center;
+}
+
+
+
+/* debut responsive */
+
+ /* grand écran */
+ @media screen and (min-width: 1025px) {
+
+    div.barre_nav_mobile {
+       display: none;
+    }
+
+    ul.overflow{
+        display: none;
+    }
+}
+
+ /* moyen et petit ecran */
+ @media screen and (max-width: 1025px) {
+    div.barre_nav_web {
+       display: none;
+    }
+    div.barre_nav_mobile{
+        background-color: rgba(255, 255, 255, 0.674);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        position: sticky;
+        top: 0%;
+        padding: 0.8em;
+        
+    }
+
+  
+}
+
+/* grand et moyen écran */
+@media screen and (min-width: 800px) {
+    button#mobile{
+        display: none;
+    }
+} 
+
+
+/* petit ecran */
+
+
+@media screen and (max-width: 800px) {
+    div#header_web>ul#barre_button{
+        display: none;
+    }
+    div#header_web>h4{
+        font-weight: 500;
+    }
+
+    button#mobile{
+        padding: 14px;
+        width: 14em;
+        height: 2.6em;
+        font-family: "quicksand", sans-serif;
+        border-radius: 0.3em;
+        border-style: solid;
+        font-size: 0.9em;
+        border-color:lightgray;
+        border-width: 0.01em;  
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        background-color: white;
+        color:black;
+        font-weight: 400;
+        
+    }
+}
